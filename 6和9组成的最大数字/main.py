@@ -3,7 +3,8 @@
 
 def test(num):
     # 逻辑代码写到这里
-    return
+    return int(str(num).replace("6","9",1))
+    # 替代第一个6变成9，重复一次
 
 
 if __name__ == "__main__":
