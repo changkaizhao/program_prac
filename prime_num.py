@@ -14,16 +14,19 @@ def factorial(n):
 
 
 def assertEqual(a1, a2):
-    if len(a1) == len(a2):
-        for i in a1:
-            if i in a2:
-                a2.remove(i)
-        if len(a2) == 0:
-            print('✅ pass')
+    if(len(a1) == 0):
+        print('❌ Not pass')
+    else:
+        if len(a1) == len(a2):
+            for i in a1:
+                if i in a2:
+                    a2.remove(i)
+            if len(a2) == 0:
+                print('✅ pass')
+            else:
+                print('❌ Not pass')
         else:
             print('❌ Not pass')
-    else:
-        print('❌ Not pass')
 
 
 def test_factorial():
