@@ -13,10 +13,6 @@ def factorial(n):
     pass
 
 
-def inList(n, l):
-    return n in l
-
-
 def assertEqual(a1, a2):
     if len(a1) == len(a2):
         for i in a1:
@@ -26,7 +22,6 @@ def assertEqual(a1, a2):
             print('✅ pass')
         else:
             print('❌ Not pass')
-
     else:
         print('❌ Not pass')
 
