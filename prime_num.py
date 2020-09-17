@@ -10,11 +10,19 @@
 
 def factorial(n):
     # 在这里写程序
+    x = int(input("x="))
+    a = 2
+    s = []
+    for i in range(1, x+1):
+        if x > a and x % a == 0:
+            s.append(a)
+        a = a + 1
+    print("answer is", s)
     pass
 
 
 def assertEqual(a1, a2):
-    if len(a1) == len(a2):
+    if list(a1) == list(a2):
         for i in a1:
             if i in a2:
                 a2.remove(i)
