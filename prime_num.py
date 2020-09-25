@@ -10,21 +10,22 @@
 
 def factorial(n):
     # 在这里写程序
-    def isprime(n):  # 一个判断质数的方法，如果是质数，就返回这个数，如果不是质数，就什么也不返回
-        for i in range(2, n):
-            if n % i == 0:
-                break
-        else:
-            return n
+    # def isprime(n):  # 一个判断质数的方法，如果是质数，就返回这个数，如果不是质数，就什么也不返回
+    #     for i in range(2, n):
+    #         if n % i == 0:
+    #             break
+    #     else:
+    #         return n
 
-    num = int(input("number: "))
+    # num = int(input("number: "))
+    num = int(n)
     i = 1  # 哨兵变量为1
     if num >= 2:
 
         while i <= num:
             i = i + 1
             if num % i == 0:  # 如果i为因子
-                print(isprime(i))  # 先看这个因子是不是质数，是就输出
+                # print(isprime(i))  # 先看这个因子是不是质数，是就输出
                 num = num / i
                 print("num is %s now!" % num) # 现在打num
                 i = 1  # 记得把哨兵重新设置为1，这样循环才会更新，我一开始用for语句循环，发现没法从头开始循环
